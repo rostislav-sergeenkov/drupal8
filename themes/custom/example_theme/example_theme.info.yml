@@ -1,0 +1,31 @@
+# @see https://www.drupal.org/theme-guide/8/defining-a-theme
+# === Required settings ===
+
+name: 'Example Theme'
+description: 'Drupal 8 school example theme.'
+core: 8.x
+# can be theme, module or profile
+type: theme
+
+# === Recommended settings ===
+
+# Defines a parent of the sub-theme
+# base theme: bartik
+
+# otherwise Drupal will search for the default 'screenshot.png' file
+screenshot: example_theme.jpg
+
+# adds a library, where both CSS and JS are combined
+libraries:
+ - example_theme/global-styling
+
+# removes a link to the specified CSS file
+stylesheets-remove:
+ - core/assets/vendor/normalize-css/normalize.css
+
+# theme regions
+regions:
+  header: Header
+  content: Content # required region!
+  sidebar_first: 'Sidebar first'
+  footer: Footer
