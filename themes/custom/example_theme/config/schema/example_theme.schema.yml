@@ -1,0 +1,5 @@
+# Example Theme for the configuration files of the Stark theme.
+
+example_theme.settings:
+  type: theme_settings
+  label: 'Example Theme settings'
