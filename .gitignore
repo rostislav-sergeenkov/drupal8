@@ -1,12 +1,12 @@
 # Ignore paths that contain user-generated content.
-docroot/sites/*/files
-docroot/sites/*/private
+sites/*/files
+sites/*/private
 
 # Ignore post-checkout hook configuration.
 post-checkout.local.sh
 
 # Ignore local/custom aliases.
-docroot/sites/all/drush/aliases/aliases.drushrc.php
+sites/all/drush/aliases/aliases.drushrc.php
 
 #Ignore folders used by the build releases scripts
 builds/pub_releases
@@ -103,10 +103,10 @@ tmtags
 /results/
 
 # Drush rebuild local overrides file
-docroot/sites/default/drush/rebuild.local.yml
+sites/default/drush/rebuild.local.yml
 
 # Test scripts.
-docroot/test*.php
+test*.php
 
 # PhpStorm needs drush in the project path for cli debugging. This allows devs
 # to add a symlink in the project root to their drush instance.
