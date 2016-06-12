@@ -724,3 +724,10 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'minimal';
 $config_directories['sync'] = 'sites/default/files/config_qECMkaqhxFDeV-0sYQGOf1QW_gAzhQPpc6f1ggvZWXhZdBdnGToRyujHTwRdBd_K5XjFQ7whOw/sync';
+
+/**
+ * Disables page caching and puts site in DEV mode.
+ */
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
