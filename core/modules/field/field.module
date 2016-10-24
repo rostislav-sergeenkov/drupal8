@@ -119,10 +119,12 @@ function field_help($route_name, RouteMatchInterface $route_match) {
       if ($items) {
         $output .= '<dt>' . t('Provided by modules') . '</dt>';
         $output .= '<dd>' . t('Here is a list of the currently enabled field, formatter, and widget modules:');
-        $item_list = array(
+
+        return array(
           '#theme' => 'item_list',
           '#items' => $items,
         );
+
         $output .= \Drupal::service('renderer')->renderPlain($item_list);
         $output .= '</dd>';
       }

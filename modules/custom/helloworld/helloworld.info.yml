@@ -1,0 +1,6 @@
+name: 'Rost Hello World module'
+description: 'Rost example module'
+type: module
+core: 8.x
+version: 1.0
+package: Examples

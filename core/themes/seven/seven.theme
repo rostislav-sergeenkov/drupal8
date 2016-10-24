@@ -186,3 +186,9 @@ function seven_form_node_form_alter(&$form, FormStateInterface $form_state) {
   $form['revision_information']['#type'] = 'container';
   $form['revision_information']['#group'] = 'meta';
 }
+
+  \Drupal::service('twig')->getFilters();
+  \Drupal::service('twig')->getFunctions();
+
+
+
